@@ -24,7 +24,7 @@
                 var charCount = 2 + Math.floor(Math.random() * 5) + 1;
                 //random string and random url of an image
                 var randomString = randomStringGen(charCount);
-                var randomImageURL = "http://i.imgur.com/" + randomString + "." + $("#noiSelect option:selected").text();
+                var randomImageURL = "https://i.imgur.com/" + randomString + "." + $("#noiSelect option:selected").text();
 
 //Find image using ajax and return possibly existing image to div.
                 $.ajax({
