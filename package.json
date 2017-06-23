@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Project Image Bot Beta",
   "main": "server.js",
-  "author": "Tomoyo Rikka",
+  "author": "Asagi Ai",
   "scripts": {
     "start": "node server.js"
   },
