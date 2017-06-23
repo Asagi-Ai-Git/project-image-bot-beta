@@ -1,0 +1,21 @@
+{
+  "name": "project-image-bot-beta",
+  "version": "0.0.1",
+  "description": "Project Image Bot Beta",
+  "main": "server.js",
+  "author": "Tomoyo Rikka",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.6.2",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "random-js": "^1.0.8",
+    "request": "^2.81.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    <title>Project Image Bot Beta</title>
+</head>
+<body>
+    <center>
+    <h3>
+        Imgur Random Image(s) Crawler
+    </h3>    
+    </center>
+    <div id="imageBox" style="border: 1px solid black; overflow-y: scroll; height: 620px;">
+
+    </div><br/>
+  Type of image:
+    <select id="noiSelect" style="font-size: 21px;">
+        <option value="png" selected>png</option>
+        <option value="gif">gif</option>
+        <option value="jpg">jpg</option>
+     </select><br/>
+    <button id="searchButton" style="font-size: 18px; font-weight: bold;">Search It</button><br/>
+    (Starting a new image search will delete the previous one)
+    <script src="index.js"></script>
+</body>
+</html>
