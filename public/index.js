@@ -74,13 +74,13 @@
                     charCount = 3 + Math.floor(Math.random() * 6) + 1;
                     //random number and random url of an image
                     randomString = randomNumberGen(charCount)
-                    randomImageURL = "http://danbooru.donmai.us/posts/" + randomString;
+                    randomImageURL = "https://danbooru.donmai.us/posts/" + randomString;
 
                 }
                 else if (searchMethod == "By Sequence of Numbers") {
                     //Search by sequence of numbers. Starting at a specified number
                     randomString = parseInt($("input#danbooru_InText_numStart").val()) + countNumber;
-                    randomImageURL = "http://danbooru.donmai.us/posts/" + randomString;
+                    randomImageURL = "https://danbooru.donmai.us/posts/" + randomString;
                     countNumber += 1;
                 }
                 else {
@@ -88,7 +88,7 @@
                     charCount = 2 + Math.floor(Math.random() * 6) + 1;
                     //random string and random url of an image
                     randomString = randomStringGen(charCount);
-                    randomImageURL = "http://danbooru.donmai.us/posts/" + randomString;
+                    randomImageURL = "https://danbooru.donmai.us/posts/" + randomString;
                 }
 
 
@@ -102,7 +102,7 @@
                     success: function (response) {
                         var ImgUrl = $(response).find("img").attr("src").slice(1);
 
-                        $("div#imageBox").append("<img src=" + "http://danbooru.donmai.us/" + ImgUrl + " style='max-width: 600px; max-height: 400px;'/><br/>");
+                        $("div#imageBox").append("<img src=" + "https://danbooru.donmai.us/" + ImgUrl + " style='max-width: 600px; max-height: 400px;'/><br/>");
 
                     }
                 });
