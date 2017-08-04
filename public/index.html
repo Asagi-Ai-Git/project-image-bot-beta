@@ -10,20 +10,41 @@
 <body>
     <center>
     <h3>
-        Imgur Random Image(s) Crawler
+      Random Image(s) Crawler
     </h3>    
+    <h4>
+        Notice and Disclaimer <br/>
+        Pictures here are not owned by the site creator. This is merely a tool to find random images. <br/>
+        Some pictures may contain explicit content. Search at your own risk. <br/>
+    </h4>
     </center>
     <div id="imageBox" style="border: 1px solid black; overflow-y: scroll; height: 620px;">
 
     </div><br/>
+    <div class="_imgurDivOptions" style="border: 1px solid #665566">
   Type of image:
     <select id="noiSelect" style="font-size: 21px;">
         <option value="png" selected>png</option>
         <option value="gif">gif</option>
         <option value="jpg">jpg</option>
      </select><br/>
-    <button id="searchButton" style="font-size: 18px; font-weight: bold;">Search It</button><br/>
+    <button id="searchImgur" style="font-size: 18px; font-weight: bold;">Search With Imgur</button><br/>
     (Starting a new image search will delete the previous one)
-    <script src="index.js"></script>
+     </div>
+<br/>
+    <div class="_danbooruDivOptions" style="border: 1px solid #665566">
+        <span>Select Search Method</span><br/>
+        
+        <input type="radio" name ="searchMethod" value="By Random Numbers" />By Random Numbers<br/>
+        <input type="radio" name="searchMethod" value="By Sequence of Numbers" />By Sequence of Numbers<br/>
+        <input type="text"  id="danbooru_InText_numStart" placeholder="Type Start of Number" /><br/>
+        <input type="radio" name="searchMethod" value="By Random Text" />By Random Text <br/>
+
+        <button id="searchDanbooru" style="font-size: 18px; font-weight: bold;">Search With Danbooru</button><br/>
+        (Starting a new image search will delete the previous one)
+    </div>
+<br/>
+
+      <script src="index.js"></script>
 </body>
 </html>
